@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Agrega los estilos que necesites aquí */
+    </style>
+    <script>
+        function toggleMaterias(semestreId) {
+            const semestre = document.getElementById(semestreId);
+            semestre.classList.toggle("materias-visible");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Curso: Analisis y Desarrollo de Sistemas</h1>
+        <div class="logo-container">
+            <img src="Ifsul.png" alt="Ifsul">
+            <img src="utec.jpg" alt="UTEC">
+            <img src="utu.png" alt="UTU">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="pagina_principal.html">Inicio</a></li>
+                <li><a href="descripcion_curso.html">Curso</a></li>
+                <li><a href="formulario.html">Inscribirse</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="side-panel">
+                <h2>Contenido del curso</h2>
+                <button class="side-button" onclick="toggleMaterias('semestre1')">1er Semestre</button>
+                <div id="semestre1" class="materias">
+                    <a href="primerSemestre\SL.TDS.1_Lógica_Programação_2022_2.pdf">Lógica_Programação_2022_2</a>
+                    <a href="primerSemestre\SL.TDS.2_Matemática_Discreta_2022_2.pdf">Matemática_Discreta_2022_2</a>
+                    <a href="primerSemestre\SL.TDS.3_Inglês_Técnico_I_2022_2.pdf">Inglês_Técnico_I_2022_2</a>
+                    <a href="primerSemestre\SL.TDS.4_Introdução_Informática_2022_2.pdf">Introdução_Informática_2022_2</a>
+                    <a href="primerSemestre\SL.TDS.5_Comunicação_Expressão_2022_2.pdf">Comunicação_Expressão_2022_2</a>
+                    <a href="primerSemestre\SL.TDS.6_Relações_Humanas_2022_2.pdf">Relações_Humanas_2022_2</a>
+                </div>
+                <button class="side-button" onclick="toggleMaterias('semestre2')">2do Semestre</button>
+                <div id="semestre2" class="materias">
+                    <a href="segundoSemestre\SL.TDS.7_Programação_I_2022_2.pdf">Programação_I_2022_2</a>
+                    <a href="segundoSemestre\SL.TDS.8_Banco_Dados_I_2022_2.pdf">Banco_Dados_I_2022_2</a>
+                    <a href="segundoSemestre\SL.TDS.9_Inglês_Técnico_II_2022_2.pdf">Inglês_Técnico_II_2022_2</a>
+                    <a href="segundoSemestre\SL.TDS.10_Métodos_Quantitativos_2022_2.pdf">Métodos_Quantitativos_2022_2</a>
+                    <a href="segundoSemestre\SL.TDS.11_Interface_Homem_2022_2.pdf">Interface_Homem_2022_2</a>
+                    <a href="segundoSemestre\SL.TDS.13_Probabilidade_Estatística_2022_2.pdf">Probabilidade_Estatística_2022_2</a>
+                </div>
+                <button class="side-button" onclick="toggleMaterias('semestre3')">3er Semestre</button>
+                <div id="semestre3" class="materias">
+                    <a href="tercerSemestre\SL.TDS.14_Programacao_Orientada_Objetos_2022_2.pdf">Programacao_Orientada_Objetos_2022_2</a>
+                    <a href="tercerSemestre\SL.TDS.15_Sociedade_Tecnologia_2022_2.pdf">Sociedade_Tecnologia_2022_2</a>
+                    <a href="tercerSemestre\SL.TDS.16_Banco_Dados_II_2022_2.pdf">Banco_Dados_II_2022_2</a>
+                    <a href="tercerSemestre\SL.TDS.17_Analise_Sistemas_I_2022_2.pdf">Analise_Sistemas_I_2022_2</a>
+                    <a href="tercerSemestre\SL.TDS.18_Ingles_Tecnico_III_2022_2.pdf">Ingles_Tecnico_III_2022_2</a>
+                    <a href="tercerSemestre\SL.TDS.19_Redes_Computadores_2022_2.pdf">Redes_Computadores_2022_2</a>
+                    <a href="tercerSemestre\SL.TDS.20_Estrutura_Dados_2022_2.pdf">Estrutura_Dados_2022_2</a>
+                </div>
+                <button class="side-button" onclick="toggleMaterias('semestre4')">4to Semestre</button>
+                <div id="semestre4" class="materias">
+                    <a href="cuartoSemestre\SL.TDS.21_Programacao_Web_I_2022_2.pdf">Programacao_Web_I_2022_2</a>
+                    <a href="cuartoSemestre\SL.TDS.22_Programacao_Mobile_I_2022_2.pdf">Programacao_Mobile_I_2022_2</a>
+                    <a href="cuartoSemestre\SL.TDS.23_Banco_Dados_III_2022_2.pdf">Banco_Dados_III_2022_2</a>
+                    <a href="cuartoSemestre\SL.TDS.24_Analise_Sistemas_II_2022_2.pdf">Analise_Sistemas_II_2022_2</a>
+                    <a href="cuartoSemestre\SL.TDS.25_Metodologia_Pesquisa_2022_2.pdf">Metodologia_Pesquisa_2022_2</a>
+                    <a href="cuartoSemestre\SL.TDS.26_Testes_Aplicacoes_2022_2.pdf">Testes_Aplicacoes_2022_2</a>
+                    <a href="cuartoSemestre\SL.TDS.27_Sistemas_Distribuidos_2022_2.pdf">Sistemas_Distribuidos_2022_2</a>
+                </div>
+                <button class="side-button" onclick="toggleMaterias('semestre5')">5to Semestre</button>
+                <div id="semestre5" class="materias">
+                    <a href="quintoSemestre\SL.TDS.28_Programação_Web_II_2019-1.pdf">Programação_Web_II_2019-1</a>
+                    <a href="quintoSemestre\SL.TDS.29_Programação_Mobile_II_2019-1.pdf">Programação_Mobile_II_2019-1</a>
+                    <a href="quintoSemestre\SL.TDS.30_Praticas_Analise_Desenvolvimento_Sistemas_I_2019-1.pdf">Praticas_Analise_Desenvolvimento_Sistemas_I_2019-1</a>
+                    <a href="quintoSemestre\SL.TDS.31_Engenharia_Software_2019-1.pdf">Engenharia_Software_2019-1</a>
+                    <a href="quintoSemestre\SL.TDS.32_Qualidade_Software_2019-1.pdf">Qualidade_Software_2019-1</a>
+                    <a href="quintoSemestre\SL.TDS.33_Produção_Textual_2019-1.pdf">Produção_Textual_2019-1</a>
+                </div>
+                <button class="side-button" onclick="toggleMaterias('semestre6')">6to Semestre</button>
+                <div id="semestre6" class="materias">
+                    <a href="sextoSemestre\SL.TDS.34_Topicos_Avancados_2022_2.pdf">Topicos_Avancados_2022_2</a>
+                    <a href="sextoSemestre\SL.TDS.35_Praticas_ADS_II_2022_2.pdf">Praticas_ADS_II_2022_2</a>
+                    <a href="sextoSemestre\SL.TDS.36_Gerencia_Projetos_2022_2.pdf">Gerencia_Projetos_2022_2</a>
+                    <a href="sextoSemestre\SL.TDS.37_Seguranca_Auditoria_2022_2.pdf">Seguranca_Auditoria_2022_2</a>
+                    <a href="sextoSemestre\SL.TDS.38_Etica_Legislacao_2022_2.pdf">Etica_Legislacao_2022_2</a>
+                    <a href="sextoSemestre\SL.TDS.39_Empreendedorismo_2022_2.pdf">Empreendedorismo_2022_2</a>
+                </div>
+                <button class="side-button" onclick="toggleMaterias('semestreOpcional')">Materias opcionales</button>
+                <div id="semestreOpcional" class="materias">
+                    <a href="optativa\SL_TDS_MATRIZ_7885_2019_1_OPTATIVAS.pdf">Opcional</a>
+
+                </div>
+               
+            </div>
+            <section>
+                <h1>Analisis y Desarrollo de Sistemas</h1>
+                <p>Este es un curso binacional compartido por 3 universidades de Uruguay y Brasil. En el cual aprenderas a analizar y crear sistemas informaticos como sistemas desktop, web, bases de datos, mobile, entre otras habilidades esenciales para una insersion laboral rapida.  </p>
+                <h3>Perfil</h3>
+                <p>El perfil profesional del egresado del curso abarca una formación basada en la construcción de conocimientos en el área tecnológica que permita la producción de sistemas informáticos de calidad que satisfagan las necesidades del mercado, con creatividad, sentido crítico, responsabilidad y cercanía al usuario. Este profesional deberá analizar, diseñar, documentar, especificar, desarrollar, probar, implementar y mantener sistemas computacionales de información</p>
+                <h3>Campo de actuación</h3>
+                <p>En la actuación de este profesional, se destacan las actividades con herramientas informáticas, equipos de informática y metodología de proyectos en la producción de sistemas. Para ello, se empleará el pensamiento lógico, el uso de lenguajes de programación y metodologías de construcción de proyectos, teniendo en cuenta la calidad, usabilidad, robustez, integridad y seguridad de los programas informáticos.</p>
+                <h3>Anexos</h3>
+                <p>Para que tengan validez como documentos oficiales, todos los archivos a continuación deben estar autenticados por el departamento de registros académicos del campus.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <p>Dirección: Av. Paul Harris, 410 - Fortim, Sant'Ana do Livramento - RS, 97574-360, Brasil </p>
+            <p>Teléfono: +55 55 3621-1190</p>
+          
+        </div>
+    </footer>
+</body>
+</html>
+
